@@ -1,0 +1,44 @@
+[include]
+  path = ~/.gitcredentials
+  path = ~/.config/nix/home-manager/dotfiles/git/catppuccin.gitconfig
+
+[init]
+  defaultBranch = main
+
+[core]
+  excludesfile = ~/.gitignore
+  pager = delta
+
+[color]
+  ui = auto
+
+[color "diff"]
+  meta = yellow
+
+[grep]
+  lineNumber = true
+
+[pull]
+  rebase = true
+
+[push]
+  default = simple
+
+[branch]
+  autosetupmerge = true
+  autosetuprebase = always
+
+[delta]
+  line-numbers = true
+  side-by-side = false
+  features = catppuccin-macchiato
+  # features = catppuccin-mocha
+  # syntax-theme = Onedark
+
+  file-modified-label = modified:
+
+[interactive]
+  diffFilter = delta --color-only
+
+[merge]
+  conflictstyle = diff3

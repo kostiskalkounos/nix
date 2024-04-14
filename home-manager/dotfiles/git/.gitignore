@@ -1,0 +1,10 @@
+.DS_Store
+.netrwhist
+autoload/
+build
+node_modules
+package-lock.json
+plugged/
+undodir/
+vendor
+yarn.lock
